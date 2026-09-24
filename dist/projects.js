@@ -2,6 +2,8 @@ const lightbox=document.querySelector('.lightbox');
 const lightboxImage=lightbox?.querySelector('img');
 const lightboxCaption=lightbox?.querySelector('p');
 document.querySelectorAll('.shot').forEach(button=>button.addEventListener('click',()=>{
+  document.querySelectorAll('.shot').forEach(item=>delete item.dataset.lastOpen);
+  button.dataset.lastOpen='true';
   const image=button.querySelector('img');
   lightboxImage.src=button.dataset.image;
   lightboxImage.alt=image.alt;
@@ -10,6 +12,7 @@ document.querySelectorAll('.shot').forEach(button=>button.addEventListener('clic
 }));
 document.querySelector('.lightbox-close')?.addEventListener('click',()=>lightbox.close());
 lightbox?.addEventListener('click',event=>{if(event.target===lightbox)lightbox.close()});
+lightbox?.addEventListener('close',()=>document.querySelector('.shot[data-last-open="true"]')?.focus());
 
 const comparisonTabs=[...document.querySelectorAll('[data-comparison]')];
 const comparisonPanel=document.querySelector('.comparison-panel');
