@@ -12,3 +12,15 @@ footer{padding:4rem 3.5vw;background:#090a08;color:#fff;display:grid;grid-templa
 @media(max-width:520px){.brand-copy{display:none}.brand-logo{width:64px;height:44px}.hero-bottom{align-items:center}.circle-link{width:88px;height:88px;font-size:.64rem}.circle-link b{display:none}.intro-copy>p{font-size:1rem}.feature-image{height:400px}.before-after img{aspect-ratio:4/5}.contact{gap:4rem}footer{padding:4rem 6vw}.footer-brand img{height:130px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 .brand-logo{height:54px;object-fit:contain}.footer-brand img{object-fit:contain}
+
+/* 2026 editorial refresh — restrained materials, estate-scale positioning */
+:root{--ink:#151713;--paper:#f3f0e9;--acid:#b99a62;--muted:#9c9b92;--stone:#d9d1c2;--moss:#263128}
+em{font-family:"Playfair Display",Georgia,serif;font-weight:500}
+.pill{border-radius:2px;text-transform:uppercase;letter-spacing:.1em;font-size:.72rem}
+.hero>img{filter:saturate(.7) contrast(1.04)}
+.hero h1,.intro h2,.feature h2,.proof h2,.contact h2{font-family:"Playfair Display",Georgia,serif;letter-spacing:-.045em;line-height:.94}
+.hero h1 em{color:#eadfc9}.feature,.contact{background:var(--moss)}
+.feature h2 em,.contact h2 em{color:#d7c29e}
+.eyebrow{letter-spacing:.24em}.section-kicker{letter-spacing:.24em}
+.service-list h3{font-family:"Playfair Display",Georgia,serif;font-size:1.45rem;font-weight:500}
+.image-label{background:#d8cfbe}.circle-link b{color:#d7c29e}
